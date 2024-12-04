@@ -1,0 +1,233 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: "Noto Sans", sans-serif;
+    @apply
+    bg-slate-100
+}
+
+
+/* Appbar */
+.appbar {
+    @apply
+    fixed
+    top-0
+    left-0
+    w-full
+    z-10
+    flex
+    flex-col
+    md:flex-row
+    justify-between
+    items-center
+    md:h-14
+    bg-white
+    border-b-[1.8px]
+    border-b-slate-200
+}
+.appbar-brand {
+    @apply
+    w-full
+    md:w-[240px]
+    md:h-14
+    flex
+    items-center
+    justify-center
+    font-bold
+    text-red-500
+    text-xl
+}
+.appbar-right .menu {
+    @apply
+    flex
+    items-center
+    md:mr-8
+}
+.appbar-right .menu .menu-item .item {
+    @apply
+    relative
+    flex
+    items-center
+    justify-center
+    h-14
+    hover:bg-slate-200
+    px-4
+}
+.appbar-right .menu .menu-item .item i {
+    @apply
+    text-xl
+}
+.appbar-right .menu .menu-item .item .budge-notif{
+    @apply
+    absolute
+    bg-red-500
+    text-white
+    text-[10px]
+    w-[16px]
+    h-[16px]
+    flex
+    items-center
+    justify-center
+    rounded-full
+    top-3
+    right-[10px]
+}
+.appbar-right .menu .menu-item .navbar-navbigation{
+    @apply
+    md:hidden
+    flex
+    flex-col
+    items-center
+    justify-center
+    w-14
+    h-14
+    gap-[2px]
+    hover:bg-slate-200
+}
+.appbar-right .menu .menu-item .navbar-navbigation span{
+    @apply
+    inline-block
+    w-5
+    h-[3px]
+    bg-slate-400
+}
+
+/* sidebar */
+
+.sidebar {
+    @apply
+    fixed
+    -left-full
+    md:left-0
+    top-0
+    w-[240px]
+    h-screen
+    bg-white
+    border-r-[1.8px]
+    border-r-slate-200
+    pt-14
+}
+
+.sidebar-open .sidebar{
+    @apply
+    left-0
+}
+
+.sidebar-user {
+    @apply
+    flex
+    items-center
+    px-3
+    h-[120px]
+    max-h-[120px]
+    overflow-hidden
+    gap-3
+}
+
+.sidebar-user img{
+    @apply
+    w-12
+    h-12
+    rounded-full
+}
+.sidebar-user .user-captions span{
+    @apply
+    inline-block
+    p-0
+    m-0
+}
+.sidebar-user .user-captions .name{
+    @apply
+    font-semibold
+    text-slate-700
+    text-sm
+}
+.sidebar-user .user-captions .email{
+    @apply
+    font-normal
+    text-slate-500
+    text-[12px]
+}
+
+.sidebar .menu .menu-title {
+    @apply
+    px-3
+    py-2.5
+    text-sm
+    text-slate-400
+    font-medium
+}
+
+.sidebar .menu .menu-item .item {
+    @apply
+    flex
+    items-center
+    gap-3
+    px-3
+    py-2.5
+    text-slate-500
+    hover:bg-slate-100
+    hover:text-red-500
+    focus:bg-slate-100
+    focus:text-red-500
+    hover:font-medium
+    focus:font-medium
+    transition-all
+    duration-500
+    ease-in-out
+}
+.sidebar .menu .menu-item .item span{
+    @apply
+    text-sm
+    uppercase
+}
+
+/* section-component */
+.section-component {
+    @apply
+    pt-[8rem]
+    pl-8
+    pr-8
+    md:pt-[5rem]
+    md:ml-[240px]
+    md:pr-8
+    md:w-[calc(100vw_-_240px)]
+    grid
+    grid-cols-12
+    gap-6
+}
+.section-content-title {
+    @apply
+    text-xl
+    font-medium
+    text-slate-700
+}
+
+.box {
+    @apply
+    bg-white
+    rounded-md
+    shadow-md
+}
+.box .header{
+    @apply
+    flex
+    items-center
+    flex-col
+    md:flex-row
+    px-4
+    py-6
+}
+.box .body,
+.box .footer{
+    @apply
+    p-4
+}
+
+.dashboard-map {
+    @apply
+    w-full
+    min-h-[400px]
+}
