@@ -58,6 +58,7 @@ body{
 .appbar-right .menu .menu-item .item i {
     @apply
     text-xl
+
 }
 .appbar-right .menu .menu-item .item .budge-notif{
     @apply
@@ -74,24 +75,30 @@ body{
     top-3
     right-[10px]
 }
-.appbar-right .menu .menu-item .navbar-navbigation{
+.appbar-right .menu .menu-item .navbar-navigation{
     @apply
     md:hidden
     flex
     flex-col
     items-center
     justify-center
-    w-14
-    h-14
+    w-[16px]
+    h-[16px]
     gap-[2px]
     hover:bg-slate-200
 }
-.appbar-right .menu .menu-item .navbar-navbigation span{
+.appbar-right .menu .menu-item .navbar-navigation span{
     @apply
     inline-block
     w-5
     h-[3px]
     bg-slate-400
+}
+
+.appbar-right .menu .menu-item .item .bi-person{
+    @apply
+    w-[16px]
+    h-[16px]
 }
 
 /* sidebar */
@@ -191,7 +198,7 @@ body{
     pl-8
     pr-8
     md:pt-[5rem]
-    md:ml-[240px]
+    md:ml-[272px]
     md:pr-8
     md:w-[calc(100vw_-_240px)]
     grid
@@ -230,4 +237,49 @@ body{
     @apply
     w-full
     min-h-[400px]
+}
+
+
+.form-group label{
+    @apply
+    text-sm
+    font-medium
+    text-slate-700
+}
+.form-group .form-control{
+    @apply
+    px-3
+    py-2.5
+    rounded-md
+    border-2
+    outline-none
+    focus:outline-none
+    hover:outline-none
+    focus:shadow-none
+    hover:shadow-none
+    border-slate-300
+    hover:border-indigo-500
+    focus:border-indigo-500
+    text-sm
+}
+.form-group .form-control.is-invalid{
+    @apply
+    border-red-500
+    hover:border-red-500
+    focus:border-red-500
+}
+.form-group .text-error{
+    @apply
+    inline-block
+    float-right
+    text-[12px]
+    text-red-500
+    font-medium
+}
+
+form.form-input {
+    @apply
+    grid
+    grid-cols-12
+    gap-4
 }

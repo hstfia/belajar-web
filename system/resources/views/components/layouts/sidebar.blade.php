@@ -1,9 +1,9 @@
 <aside class="sidebar">
     <div class="sidebar-user">
-        <img src="{{ asset('public/assets/img/user1.jpg') }}" alt="">
+        <img src="{{ asset('public\assets\img\user1.jpg') }}" alt="">
         <div class="user-captions">
-            <span class="name">Hawa Jak Lah</span>
-            <span class="email">hawajaklah@gmail.com</span>
+            <span class="name">Hawa</span> <br>
+            <span class="email">hawastfi@gmail.com</span>
         </div>
     </div>
     <ul class="menu">
@@ -15,9 +15,15 @@
             </a>
         </li>
         <li class="menu-item">
-            <a href="{{ url('admin/user') }}" class="item">
+            <a href="{{ url('admin/data-pengguna') }}" class="item">
                 <i class="bi bi-person"></i>
-                <span>Data User</span>
+                <span>Data Pengguna</span>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="{{ url('admin/data-alat') }}" class="item">
+                <i class="bi bi-inbox"></i>
+                <span>Data Alat</span>
             </a>
         </li>
 

@@ -3,11 +3,11 @@ import defaultTheme from 'tailwindcss/defaultTheme';
 /** @type {import('tailwindcss').Config} */
 export default {
     content: [
-        './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
-        './storage/framework/views/*.php',
-        './resources/**/*.blade.php',
-        './resources/**/*.js',
-        './resources/**/*.vue',
+        '../system/vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
+        '../system/storage/framework/views/*.php',
+        '../system/resources/**/*.blade.php',
+        '../system/resources/**/*.js',
+        '../system/resources/**/*.vue',
     ],
     theme: {
         extend: {
