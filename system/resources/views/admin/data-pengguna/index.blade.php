@@ -30,7 +30,7 @@
                             <tr>
                                 <th>No.</th>
                                 <th>Email</th>
-                                <th>Nama</th>
+                                <th>Nama Kepala Keluarga</th>
                                 <th>Telepon</th>
                                 <th>Alamat</th>
                                 <th>Action</th>
